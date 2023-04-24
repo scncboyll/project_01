@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <!-- <link rel="stylesheet" href="../../css/base.css"> -->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/goodscar/goodscenter.css">
+    <link rel="stylesheet" href="../../css/commoninfo.css">
+
+    <script src="../../js/Common.js"></script>
+    <script src="../../js/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <!-- 快捷导航 -->
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li><a href="Home?DashboardID=7">首页</a></li>
+                <li><a href="Home?DashboardID=15">购物车</a></li>
+                <li><a href="Home?DashboardID=16">留言板</a></li>
+                <li><a href="Home?DashboardID=19">个人中心</a></li>
+                <li><a href="Home?DashboardID=0">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="#"></a></h1>
+        </div>
+        <div class="nav" id="nav_list">
+            <ul>
+                <!-- <li><a href="Home?DashboardID=7">首页</a></li> -->
+                <li><a href="Home?DashboardID=7">首页</a></li>
+                <li><a href="#">小吃零食</a></li>
+                <li><a href="#">生活用品</a></li>
+                <li><a href="#">文具用品</a></li>
+                <li><a href="#">新鲜水果</a></li>
+                <li><a href="#">电子产品</a></li>
+            </ul>
+        </div>
+    
+        <!-- 搜索框 -->
+        <div class="search_nav">
+            <div class="result-list">
+                <ul>
+                    <li><a href="#">辣条</a></li>
+                    <li><a href="#">洁柔卫生纸</a></li>
+                    <li><a href="#">小太阳吹分机</a></li>
+                    <li><a href="#">小米手机</a></li>
+                    <li><a href="#">华为手机</a></li>
+                    <li><a href="#">飘柔洗发水</a></li>
+                    <li><a href="#">李宁卫衣</a></li>
+                    <li><a href="#">香蕉</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="搜一搜">
+            <!-- 定位 放大镜 -->
+            <span></span>
+        </div>
+        <div class="car">
+            <span>2</span>
+        </div>
+    </div>
+<!-- 内容 -->
+<div class="center_body">
+    <div class="wrapper">
+        <!-- 左侧: 侧边栏 -->
+        <div class="aside">
+            <!-- 用户信息 -->
+            <div class="user_meta">
+                <div class="pic"><img src="./uploads/avatar_1.png" alt=""></div>
+                <h4></h4>
+                <p>黄金会员</p>
+            </div>
+
+            <!-- 侧导航 -->
+            <div class="user_manage">
+                <h4>我的账户</h4>
+                <div class="links">
+                    <a href="#" class="active">个人中心</a>
+                    <a href="#">消息通知</a>
+                    <a href="#">个人信息</a>
+                    <a href="#">安全设置</a>
+                    <a href="#">地址管理</a>
+                    <a href="#">我的积分</a>
+                    <a href="#">我的足迹</a>
+                    <a href="#">邀请有礼</a>
+                    <a href="#">幸运抽奖</a>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧: 主体内容 -->
+        <div class="main">
+            <!-- 账户信息概览 -->
+            <div class="overview">
+                <div class="item">
+                    <a href="#">
+                        <img src="./images/vip.png" alt="">
+                        <span>会员中心</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/vip.png" alt="">
+                        <span>个人中心</span>
+                    </a>
+                    <a href="#">
+                        <img src="./images/vip.png" alt="">
+                        <span>商品信息</span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <i>7</i>
+                        <span>通用优惠卷</span>
+                    </a>
+                    <a href="#">
+                        <i>2</i>
+                        <span>优惠卷</span>
+                    </a>
+                    <a href="#">
+                        <i>6</i>
+                        <span>已过期</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 我的订单 -->
+            <div class="pannel pannel_orders">
+                <div class="pannel_header">
+                    <h4>我的订单</h4>
+                    <a href="#">查看全部 ></a>
+                </div>
+
+                <!-- 订单内容 -->
+                <div class="orders">
+                    <ul>
+                        
+                        <!-- <li>
+                            <div class="goods">
+                                <div class="pic">
+                                    <a href="#"><img src="./uploads/order_goods_1.jpg" alt=""></a>
+                                </div>
+                                <div class="info">
+                                    <h5>拉夫劳伦t恤男正品圆领短袖拉夫劳伦t恤男正品圆领短袖</h5>
+                                    <p><i>衣服</i>  数量：<span>1</span> </p>
+                                </div>
+                                <div class="status">已付款</div>
+                            </div>
+                            <div class="payment common">
+                                <p>￥99.00</p>
+                                <p>（含运费：¥<span>22</span> 元）</p>
+                                <p>在线支付</p>
+                            </div>
+                            <div class="action common">
+                                <a href="#">查看详情</a>
+                            </div>
+                        </li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 收藏的商品 -->
+            <div class="pannel pannel_collect">
+                <div class="pannel_header">
+                    <h4>收藏的商品</h4>
+                    <a href="#">查看全部 ></a>
+                </div>
+
+                <div class="collect">
+                    <ul>
+                        <li>
+                            <div class="pic">
+                                <a href="Home?DashboardID=17&id=2"><img src="../../uploads/2.jpg" alt=""></a>
+                            </div>
+                            <h5>卫龙辣条大面筋大礼包休闲零食</h5>
+                            <p>￥<i>3</i></p>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="Home?DashboardID=17&id=7"><img src="../../uploads/7.jpg" alt=""></a>
+                            </div>
+                            <h5>飘柔 精粹润泽柔顺洗发水1KG 染发修护 </h5>
+                            <p>￥<i>30</i></p>
+                        </li>
+                        <li>
+                            <div class="pic">
+                            <a href="Home?DashboardID=17&id=14"><img src="../../uploads/14.jpg" alt=""></a>
+                            </div>
+                            <h5>趣鲜语江西赣南沃柑 时令新鲜水果</h5>
+                            <p>￥<i>40</i></p>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <a href="Home?DashboardID=17&id=10"><img src="../../uploads/10.jpg" alt=""></a>
+                            </div>
+                            <h5>足力健老人鞋春季轻便散步鞋 鸢尾紫-女款 41</h5>
+                            <p>￥<i>246</i></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 内容 -->
+
+
+<!-- 公共底部 -->
+<div class="xtx_footer clearfix">
+    <div class="wrapper">
+        <!-- 联系我们 -->
+        <div class="contact clearfix">
+            <dl>
+                <dt>客户服务</dt>
+                <dd class="chat">在线客服</dd>
+                <dd class="feedback">问题反馈</dd>
+            </dl>
+            <dl>
+                <dt>关注我们</dt>
+                <dd class="weixin">公众号</dd>
+                <dd class="weibo">微博</dd>
+            </dl>
+            <dl>
+                <dt>下载APP</dt>
+                <dd class="qrcode">
+                    <img src="../../uploads/qrcode.png">
+                </dd>
+                <dd class="download">
+                    <span>扫描二维码</span>
+                    <span>立马下载APP</span>
+                    <a href="javascript:;">下载页面</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt>服务热线</dt>
+                <dd class="hotline">
+                    400-0000-000
+                    <small>周一至周日 8:00-18:00</small>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <!-- 其它 -->
+    <div class="extra">
+        <div class="wrapper">
+            <!-- 口号 -->
+            <div class="slogan">
+                <a href="javascript:;" class="price">价格亲民</a>
+                <a href="javascript:;" class="express">物流快捷</a>
+                <a href="javascript:;" class="quality">品质新鲜</a>
+            </div>
+            <!-- 版权信息 -->
+            <div class="copyright">
+                <p>
+                    <a href="javascript:;">关于我们</a>
+                    <a href="javascript:;">帮助中心</a>
+                    <a href="javascript:;">售后服务</a>
+                    <a href="javascript:;">配送与验收</a>
+                    <a href="javascript:;">商务合作</a>
+                    <a href="javascript:;">搜索推荐</a>
+                    <a href="javascript:;">友情链接</a>
+                </p>
+                <p>CopyRight &copy; 校园购物平台</p>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+    <script>
+        //导航栏线上登录用户的姓名
+        const ykname = document.querySelector('.shortcut .wrapper li:first-child')
+        const ykyuname = localStorage.getItem('ykyname');
+        ykname.innerHTML = `<a href="javascript:;"><i class="iconfont icon-user" style="font-size: 14px;">${ykyuname}</a>`
+        $('.user_meta h4').html(ykyuname)
+        //退出登录删除本地用户名
+        const removeName = document.querySelector('.shortcut .wrapper li:last-child')
+        removeName.addEventListener('click', function () {
+            localStorage.removeItem('xtx-uname')
+        })
+
+        const datacen =  JSON.parse(localStorage.getItem('datanew')) 
+        console.log(datacen);
+        
+        let str=''
+        for (let i = 0; i < datacen.length; i++) {
+            str+=`
+            <li>
+                <div class="goods">
+                    <div class="pic">
+                        <img src="../../uploads/${datacen[i].goodid}.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h5>${datacen[i].note}</h5>
+                        <p><i>${datacen[i].goodname}</i>  数量：<span>${datacen[i].num}</span> </p>
+                    </div>
+                    <div class="status">已付款</div>
+                </div>
+                <div class="payment common">
+                    <p>￥${datacen[i].price* datacen[i].num}</p>
+                    <p>（含运费：¥<span>${parseInt(+datacen[i].price * 0.3)}</span> 元）</p>
+                    <p>在线支付</p>
+                </div>
+                <div class="action common">
+                    <a href="Home?DashboardID=17&id=${datacen[i].goodid}">查看详情</a>
+                </div>
+            </li>
+            `
+        }
+        $('.orders ul').html(str)
+
+
+    </script>
+</body>
+</html>

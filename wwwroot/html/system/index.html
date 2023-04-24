@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>校园线上购物系统</title>
+    <!-- 外链式样式表后写的生效 -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <!-- <link rel="stylesheet" href="https://at.alicdn.com/t/font_2143783_iq6z4ey5vu.css"> -->
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <script src="../../js/swiper.min.js"></script>
+    <script  src="../../js/Common.js"></script>
+    <script src="../../js/jquery-1.12.4.js"></script>
+
+</head>
+
+<body>
+    <!-- 快捷导航 -->
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li><a href="Home?DashboardID=7">首页</a></li>
+                <li><a href="Home?DashboardID=15">购物车</a></li>
+                <li><a href="Home?DashboardID=16">留言板</a></li>
+                <li><a href="Home?DashboardID=19">个人中心</a></li>
+                <li><a href="Home?DashboardID=0">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 头部 -->
+    <div class="header wrapper">
+        <div class="logo">
+            <h1><a href="#"></a></h1>
+        </div>
+        <div class="nav" id="nav_list">
+            <ul>
+                <!-- <li><a href="Home?DashboardID=7">首页</a></li> -->
+                <li><a href="#">首页</a></li>
+                <li><a href="#">小吃零食</a></li>
+                <li><a href="#">生活用品</a></li>
+                <li><a href="#">文具用品</a></li>
+                <li><a href="#">新鲜水果</a></li>
+                <li><a href="#">电子产品</a></li>
+            </ul>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search_nav">
+            <div class="result-list">
+                <ul>
+                    <li><a href="#">辣条</a></li>
+                    <li><a href="#">洁柔卫生纸</a></li>
+                    <li><a href="#">小太阳吹分机</a></li>
+                    <li><a href="#">小米手机</a></li>
+                    <li><a href="#">华为手机</a></li>
+                    <li><a href="#">飘柔洗发水</a></li>
+                    <li><a href="#">李宁卫衣</a></li>
+                    <li><a href="#">香蕉</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="搜一搜">
+            <!-- 定位 放大镜 -->
+            <span></span>
+        </div>
+        <div class="car">
+            <span>2</span>
+        </div>
+
+    </div>
+
+
+    <!-- banner -->
+    <div class="banner">
+        <div class="wrapper">
+            <!-- 有多少个图,就有都少个li -->
+            <ul>
+                <li>
+                    <a href="#"><img src="../../uploads/banner_1.png" alt=""></a>
+                </li>
+            </ul>
+
+            <!-- 侧导航 -->
+            <div class="aside">
+                <ul>
+
+                    <li><a href="#">生鲜<span>水果 蔬菜</span></a></li>
+                    <li><a href="#">美食<span>面点 干果</span></a></li>
+                    <li><a href="#">电器<span>数码产品</span></a></li>
+                    <li><a href="#">居家<span>床品  被枕</span></a></li>
+                    <li><a href="#">洗护<span>洗发洗护 </span></a></li>
+                    <li><a href="#">孕婴<span>奶粉  辅食</span></a></li>
+                    <li><a href="#">餐橱<span>数码产品</span></a></li>
+                    <li><a href="#">服饰<span>女装 男装</span></a></li>
+                    <li><a href="#">杂货<span>户外 图书</span></a></li>
+                    <li><a href="#">品牌<span>品牌制造</span></a></li>
+                </ul>
+            </div>
+
+            <!-- 轮播图 -->
+            <div class="article">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../uploads/banner_1.png"></div>
+                        <div class="swiper-slide"><img src="../../uploads/banner_2.png"></div>
+                        <div class="swiper-slide"><img src="../../uploads/banner_5.jpg"></div>
+                        <div class="swiper-slide"><img src="../../uploads/discuss_goods_3.jpg"></div>
+                        <div class="swiper-slide"><img src="../../uploads/topic_goods_1.jpg"></div>
+                        <div class="swiper-slide"><img src="../../uploads/topic_goods_2.jpg"></div>
+                        <div class="swiper-slide"><img src="../../uploads/topic_goods_3.jpg"></div>
+                        <div class="swiper-slide"><img src="../../uploads/discuss_goods_1.jpg"></div>
+                        <div class="swiper-slide"><img src="../../uploads/discuss_goods_2.jpg"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 箭头 -->
+            <!-- prev: 上一个 -->
+            <!-- <a href="#" class="prev"></a> -->
+            <!-- next : 下一个 -->
+            <!-- <a href="#" class="next"></a> -->
+
+            <!-- 圆点: 当前状态: current / active -->
+            <!-- js 找到用户点击的li 添加类名 li变成白色的 -->
+            <!-- <ol>
+                <li></li>
+                <li></li>
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+            </ol> -->
+        </div>
+    </div>
+
+
+
+    <!-- 新鲜好物 -->
+    <div class="goods wrapper">
+        <!-- hd header 头部 -->
+        <div class="hd">
+            <h2>新鲜好物<span>新鲜出炉 品质靠谱</span></h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- body 身体, 内容 -->
+        <div class="bd clearfix">
+            <ul>
+                <li>
+                    <a href="Home?DashboardID=17&id=6">
+                        <img src="../../uploads/6.jpg" alt="">
+                        <h3>华为手机</h3>
+                        <div>￥<span>3000</span></div>
+                        <b>新品</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="Home?DashboardID=17&id=11">
+                        <img src="../../uploads/11.jpg" alt="">
+                        <h3>笔记本</h3>
+                        <div>￥<span>3</span></div>
+                        <b>新品</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="Home?DashboardID=17&id=15">
+                        <img src="../../uploads/15.jpg" alt="">
+                        <h3>贵妃芒果</h3>
+                        <div>￥<span>25</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="Home?DashboardID=17&id=5">
+                        <img src="../../uploads/5.jpg" alt="">
+                        <h3>小米手机</h3>
+                        <div>￥<span>3000</span></div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- 商品列表 -->
+    <div class="goodslist wrapper">
+        <div >
+            <!-- 首页 -->
+            <ul id="userList_index" style="display: block;">
+                <!-- <li style="margin: 10px;">
+                    <div class="goodsimg" style="border: 1px solid #ccc; padding: 10px;">
+                        <img src="../../uploads/order_goods_1.jpg" alt="">
+                    </div>
+                    <div class="goodsinfo">
+                        <h3>吹分机</h3>
+                        <p>这个是简介</p>
+                        <p>价格: <span>233</span> 元</p>
+
+                    </div>
+                    <div class="goodsnum">
+                        <p>已出售：200个</p>
+                        <p>剩余库存：300个</p>
+
+                    </div>
+                    <div class="goodsstate">
+                        <p>销售状态：销售中</p>
+                    </div>
+                    <div class="joincar">
+                        <button>加入购物车</button>
+                    </div>
+                </li> -->
+
+            </ul>
+
+            <!-- 小吃零食 -->
+            <ul id="userList_xcls">
+
+            </ul>
+
+            <!-- 生活用品 -->
+            <ul id="userList_shyp">
+                 
+            </ul>
+
+            <!-- 文具用品 -->
+            <ul id="userList_wjyp">
+                                
+            </ul>
+
+            <!-- 新鲜水果 -->
+            <ul id="userList_xxsg">
+                                           
+            </ul>
+
+            <!-- 电子产品 -->
+            <ul id="userList_dzcp">
+                      
+            </ul>
+        </div>
+    </div>
+
+    <!-- 电梯 -->
+    <div class="xtx-elevator" style="opacity: 0;">
+        <ul class="xtx-elevator-list">
+            <li>
+                <a href="javascript:;" id="backTop">
+                    <i class="sprites"></i>
+                    顶部</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 版权区域 -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="top">
+                <ul>
+                    <li>
+                        <!-- 通过伪元素添加标签实现精灵图 -->
+                        <span>价格亲民</span>
+                    </li>
+                    <li>
+                        <span>物流快捷</span>
+                    </li>
+                    <li>
+                        <span>品质新鲜</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="#">关于我们</a> |
+                    <a href="#">帮助中心</a> |
+                    <a href="#">售后服务</a> |
+                    <a href="#">配送与验收</a> |
+                    <a href="#">商务合作</a> |
+                    <a href="#">搜索推荐</a> |
+                    <a href="#">友情链接</a>
+                </p>
+                <p>CopyRight @ 小兔鲜儿</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // 轮播图
+        var swiper = new Swiper(".mySwiper", {
+            // spaceBetween: 30,
+             loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // 电梯
+        // 第一大模块，页面滑动可以显示和隐藏
+        (function () {
+            // 获取元素
+            const backTop = document.querySelector('#backTop')
+            const elevator = document.querySelector('.xtx-elevator')
+            const Banner = document.querySelector('.banner')
+            const footer = document.querySelector('.footer')
+            // 1. 当页面滚动大于 300像素，就显示 电梯导航
+            // 2. 给页面添加滚动事件
+            window.addEventListener('scroll', function () {
+                // 被卷去的头部大于 300 
+                const n = document.documentElement.scrollTop
+                // console.log(n);
+                // if (n >= 300) {
+                //   elevator.style.opacity = 1
+                // } else {
+                //   elevator.style.opacity = 0
+                // }
+                // 简写
+                // console.log(banner.offsetTop); //获取banner到浏览器顶部的位置
+                // console.log(footer.offsetTop);
+                elevator.style.opacity = n >= Banner.offsetTop ? 1 : 0
+                //在最下面让顶部的字体变成白色
+                backTop.style.color = n >= footer.offsetTop - 633 ? '#fff' : '#000'
+            })
+
+            // 点击返回页面顶部
+            backTop.addEventListener('click', function () {
+                document.documentElement.scrollTop = 0;
+            })
+        })();
+
+        //导航栏线上登录用户的姓名
+        const ykname = document.querySelector('.shortcut .wrapper li:first-child')
+        const ykyuname = localStorage.getItem('ykyname');
+        ykname.innerHTML = `<a href="javascript:;"><i class="iconfont icon-user">${ykyuname}</a>`
+
+        //退出登录删除本地用户名
+        const removeName = document.querySelector('.shortcut .wrapper li:last-child')
+        removeName.addEventListener('click', function () {
+            localStorage.removeItem('xtx-uname')
+        })
+
+
+    </script>
+
+
+    <script src="../../js/goods/index.js"></script>
+
+</body>
+
+</html>

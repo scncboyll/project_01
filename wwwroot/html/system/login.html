@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="../../css/login.css" />
+</head>
+
+<body>
+    <div class="all">
+
+        <div class="top-buttons-agileinfo">
+            <!-- DashboardID=0 跳往用户登录页面 DashboardID=2跳往用户注册页面   DashboardID=5  跳往管理员登录页面-->
+            <a href="Home?DashboardID=0" class="active">用户登录</a><a href="Home?DashboardID=2">用户注册</a><a
+                href="Home?DashboardID=5">管理员登录</a>
+        </div>
+        <h1>高 校 线 上 购 物 系 统</h1>
+
+        <div class="main-agileits">
+            <div class="form-w3-agile">
+                <h2 class="sub-agileits-w3layouts">Sign In</h2>
+                <input type="text" placeholder="Username" id="username" />
+                <input type="password" placeholder="Password" id="password" />
+                <div class="submit-w3l">
+                    <button id="loginBut">用户登录</button>
+                </div>
+                <p class="p-bottom-w3ls"><a href="Home?DashboardID=2">Sign Up here</a>if you do not have an account yet.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> © 2022 Log in to the task management system</p>
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript" src="../../js/Common.js"></script>
+    <script src="../../js/system/login.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script> -->
+
+
+</body>
+
+</html>

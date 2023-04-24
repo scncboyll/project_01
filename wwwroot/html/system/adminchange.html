@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wapper {
+        /* border: 1px solid black; */
+        margin: 0 auto;
+        width: 560px;
+        text-align: center;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .top {
+        margin-top: 30px;
+    }
+
+    .top input {
+        display: inline-block;
+        width: 400px;
+        height: 30px;
+    }
+
+    .top li {
+        margin-top: 10px;
+    }
+
+    .top li i {
+        display: inline-block;
+        width: 100px;
+        /* border: 1px solid black; */
+        height: 30px;
+        line-height: 30px;
+    }
+
+    button {
+        width: 400px;
+    }
+
+    /*改变placeholder字体颜色*/
+    ::-webkit-input-placeholder {
+        color: gray;
+    }
+
+    .submit-w3l {
+        position: relative;
+        left: 30px;
+    }
+
+    .submit-w3l button {
+        background: gray;
+        color: #000;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        cursor: pointer;
+        padding: 13px 0;
+        font-size: 14px;
+        width: 80%;
+        margin-top: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 10px;
+        letter-spacing: 2px;
+        /* left: 30px; */
+    }
+
+    .submit-w3l button:hover {
+        background: #df5799;
+        color: #ffffff;
+        transition: 0.3s all;
+    }
+</style>
+
+<body>
+    <div class="wapper">
+        <h1>修改用户信息</h1>
+        <div class="top">
+            <ul>
+                <li><i>用户名：</i> <input type="text" placeholder="请输入用户名" value="张三" id="AdminName"></li>
+                <li><i>密码：</i> <input type="text" placeholder="请输入密码"></li>
+                <li><i>电子邮箱：</i> <input type="text" placeholder="请输入电子邮箱"></li>
+                <li><i>真实姓名：</i> <input type="text" placeholder="请输入真实姓名"></li>
+                <li><i>性别：</i> <input type="text" placeholder="请输入性别"></li>
+                <li><i>地址：</i> <input type="text" placeholder="请输入居住地址"></li>
+                <li><i>联系电话：</i> <input type="text" placeholder="请输入联系电话"></li>
+            </ul>
+        </div>
+        <div class="submit-w3l">
+            <button id="loginBut" onclick="maid()">提交修改信息</button>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    let adminName = document.getElementById("AdminName").value;
+    console.log(adminName);
+
+
+    // function maid() {
+    //     let adminName = document.getElementById("AdminName").value;
+    //     console.log(adminName);
+    // }
+
+    // window.onload = function () {
+    //     QueryTask(5);
+    // }
+    // // let id = 5;
+    // function QueryTask(id) {
+    //     let url = "/API";
+
+    //     //向APICommand传递一个AdminIndex参数
+    //     let parameter = {
+    //         APICommand: "find",
+    //         ID: id
+    //     }
+
+    //     //向页面渲染数据
+    //     getAPICommandData(url, parameter).then(data => {
+    //         console.log(data);
+    //         // let userList = data.Data;
+    //         // let str = "";
+    //         // for (let i = 0; i < userList.length; i++) {
+    //         //     str += `<tr>`;
+    //         //     str += `<td>${userList[i].UserName}</td>`;
+    //         //     str += `<td>${userList[i].UserPwd}</td>`;
+    //         //     str += `<td>${userList[i].Tname}</td>`;
+    //         //     str += `<td>${userList[i].SaveTime}</td>`;
+    //         //     str += `<td><button type="button" onclick="to_changedata(${userList[i].UserID})")">修改</button></td>`;
+    //         //     str += `<td><button type="button" onclick="del(${userList[i].UserID})">删除</button></td>`;
+    //         //     str += `<tr>`;
+
+    //         // }
+    //         // document.getElementById("userList").innerHTML = str;
+
+
+
+    //         // if (data.Data > 0) {
+    //         //     window.location.href = "/Home?DashboardID=4";//给url传了一个DashboardID = 1，在common/Home中判断并进行跳转
+    //         // }
+    //     })
+
+    // }
+</script>
+
+</html>

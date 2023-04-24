@@ -1,0 +1,140 @@
+
+/*页面样式*/
+
+body {
+    font-family: Verdana;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    background: #fff;
+    background-attachment: fixed;   
+    background: url("../images/banner.jpg") no-repeat 0px 0px;
+    background-size: cover;
+    text-align: center;
+}
+
+.top-buttons-agileinfo {
+    text-align: right;
+    padding: 25px 45px;
+}
+
+.top-buttons-agileinfo a {
+    padding: 7px 24px;
+    margin: 10px 11px 0px 0px;
+}
+
+.top-buttons-agileinfo a.active {
+    border-color: #df5799;
+    background: #df5799;
+}
+
+.top-buttons-agileinfo a {
+    background: rgba(255, 255, 255, 0.15);
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 9px 26px;
+    border: 1px solid #756d6d;
+    margin: 15px 15px 0px 0px;
+    transition: 0.3s all;
+    border: 1px solid #fff;
+}
+h1 {
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    margin: 10px 0 35px 0;
+    color: #ffffff;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+.main-agileits {
+    width: 42%;
+    margin: 0 auto;
+}
+.form-w3-agile {
+    background: rgba(41, 39, 39, 0.46);
+    box-shadow: 0px 35px 44px -22px #1f181b;
+    padding: 60px 40px;
+}
+.form-w3-agile input[type="text"], .form-w3-agile input[type="password"]{
+    outline: none;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 14px;
+    width: 95.5%;
+    border: none;
+    border-bottom: 1px solid #889ba0;
+    -webkit-appearance: none;
+    margin-bottom: 30px;
+    background: transparent;
+    letter-spacing: 1px;
+}
+h2.sub-agileits-w3layouts {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2em;
+    letter-spacing: 2px;
+}
+
+/*改变placeholder字体颜色*/
+::-webkit-input-placeholder{
+	color:#fff;
+}
+
+.submit-w3l button {
+    background: #fff;
+    color: #000;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    padding: 13px 38px;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius:10px;
+    letter-spacing: 2px;
+}
+.submit-w3l button:hover{
+    background: #df5799;
+	color:#ffffff;
+	transition: 0.3s all;
+}
+.copyright p {
+    margin: 15px 23px 0;
+    line-height: 26px;
+}
+.copyright p {
+    margin: 0 auto;
+    text-align: center;
+    margin: 64px 0px 0;
+    font-size: 13px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    text-transform: none;
+}
+
+.p-bottom-w3ls {
+    font-size: 14px;
+    color: #eee;
+    margin-top: 1em;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+.p-bottom-w3ls a {
+    color: #df5799;
+    outline: none;
+    text-decoration: none;
+    margin-right: 8px;
+	font-weight: 600;
+	
+}

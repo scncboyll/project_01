@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- 引入css 初始化的css 文件 -->
+    <link rel="stylesheet" href="../../css/goodscar/base.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <!-- 引入公共样式的css 文件 -->
+    <link rel="stylesheet" href="../../css/goodscar/common.css">
+    <!-- 引入car css -->
+    <link rel="stylesheet" href="../../css/goodscar/car.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <!-- 先引入jquery  -->
+    <script src="../../js/goods/jquery.min.js"></script>
+    <!-- 在引入我们自己的js文件 -->
+    <script src="../../js/goods/car.js"></script>
+</head>
+
+<body>
+    <!-- 快捷导航 -->
+    <div class="shortcut">
+        <div class="wrapper">
+            <ul>
+                <li></li>
+                <li><a href="Home?DashboardID=7">首页</a></li>
+                <li><a href="Home?DashboardID=15">购物车</a></li>
+                <li><a href="Home?DashboardID=16">留言板</a></li>
+                <li><a href="Home?DashboardID=19">个人中心</a></li>
+                <li><a href="Home?DashboardID=0">退出登录</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <!-- 全部商品 -->
+    <div class="c-container">
+        <div class="w">
+            <div class="cart-filter-bar">
+                <em>全部商品</em>
+            </div>
+            <!-- 购物车主要核心区域 -->
+            <div class="cart-warp">
+                <!-- 头部全选模块 -->
+                <div class="cart-thead">
+                    <div class="t-checkbox">
+                        <input type="checkbox" name="" id="" class="checkall"> 全选
+                    </div>
+                    <div class="t-goods">商品</div>
+                    <div class="t-price">单价</div>
+                    <div class="t-num">数量</div>
+                    <div class="t-sum">小计</div>
+                    <div class="t-action">操作</div>
+                </div>
+                <!-- 商品详细模块 -->
+                <div class="cart-item-list" id="userList">
+
+                    <!-- <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="upload/p1.jpg" alt="">
+                            </div>
+                            <div class="p-msg">【5本26.8元】经典儿童文学彩图青少版八十天环游地球中学生语文教学大纲</div>
+                        </div>
+                        <div class="p-price">￥12.60</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥12.60</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="upload/p2.jpg" alt="">
+                            </div>
+                            <div class="p-msg">【2000张贴纸】贴纸书 3-6岁 贴画儿童 贴画书全套12册 贴画 贴纸儿童 汽</div>
+                        </div>
+                        <div class="p-price">￥24.80</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥24.80</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="p-checkbox">
+                            <input type="checkbox" name="" id="" class="j-checkbox">
+                        </div>
+                        <div class="p-goods">
+                            <div class="p-img">
+                                <img src="upload/p3.jpg" alt="">
+                            </div>
+                            <div class="p-msg">唐诗三百首+成语故事全2册 一年级课外书 精装注音儿童版 小学生二三年级课外阅读书籍</div>
+                        </div>
+                        <div class="p-price">￥29.80</div>
+                        <div class="p-num">
+                            <div class="quantity-form">
+                                <a href="javascript:;" class="decrement">-</a>
+                                <input type="text" class="itxt" value="1">
+                                <a href="javascript:;" class="increment">+</a>
+                            </div>
+                        </div>
+                        <div class="p-sum">￥29.80</div>
+                        <div class="p-action"><a href="javascript:;">删除</a></div>
+                    </div> -->
+                </div>
+
+                <!-- 结算模块 -->
+                <div class="cart-floatbar">
+                    <div class="select-all">
+                        <input type="checkbox" name="" id="" class="checkall">全选
+                    </div>
+                    <div class="operation">
+                        <!-- <a href="javascript:;" class="remove-batch"> 删除选中的商品</a> -->
+                        <a href="javascript:;" class="clear-all">清理购物车</a>
+                    </div>
+                    <div class="toolbar-right" id="Listnum">
+                        <!-- <div class="amount-sum">已经选<em>1</em>件商品</div>
+                        <div class="price-sum">总价： <em>￥12.60</em></div>
+                        <div class="btn-area">去结算</div> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer start -->
+    <div class="footer">
+        <div class="w">
+            <!-- mod_service -->
+            <div class="mod_service">
+                <ul>
+                    <li>
+                        <i class="mod-service-icon mod_service_zheng"></i>
+                        <div class="mod_service_tit">
+                            <h5>正品保障</h5>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_kuai"></i>
+                        <div class="mod_service_tit">
+                            <h5>正品保障</h5>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_bao"></i>
+                        <div class="mod_service_tit">
+                            <h5>正品保障</h5>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_bao"></i>
+                        <div class="mod_service_tit">
+                            <h5>正品保障</h5>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="mod-service-icon mod_service_bao"></i>
+                        <div class="mod_service_tit">
+                            <h5>正品保障</h5>
+                            <p>正品保障，提供发票</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- mod_help -->
+            <div class="mod_help">
+                <dl class="mod_help_item">
+                    <dt>购物指南</dt>
+                    <dd> <a href="#">购物流程 </a></dd>
+                    <dd> <a href="#">会员介绍 </a></dd>
+                    <dd> <a href="#">生活旅行/团购 </a></dd>
+                    <dd> <a href="#">常见问题 </a></dd>
+                    <dd> <a href="#">大家电 </a></dd>
+                    <dd> <a href="#">联系客服 </a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>购物指南</dt>
+                    <dd> <a href="#">购物流程 </a></dd>
+                    <dd> <a href="#">会员介绍 </a></dd>
+                    <dd> <a href="#">生活旅行/团购 </a></dd>
+                    <dd> <a href="#">常见问题 </a></dd>
+                    <dd> <a href="#">大家电 </a></dd>
+                    <dd> <a href="#">联系客服 </a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>购物指南</dt>
+                    <dd> <a href="#">购物流程 </a></dd>
+                    <dd> <a href="#">会员介绍 </a></dd>
+                    <dd> <a href="#">生活旅行/团购 </a></dd>
+                    <dd> <a href="#">常见问题 </a></dd>
+                    <dd> <a href="#">大家电 </a></dd>
+                    <dd> <a href="#">联系客服 </a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>购物指南</dt>
+                    <dd> <a href="#">购物流程 </a></dd>
+                    <dd> <a href="#">会员介绍 </a></dd>
+                    <dd> <a href="#">生活旅行/团购 </a></dd>
+                    <dd> <a href="#">常见问题 </a></dd>
+                    <dd> <a href="#">大家电 </a></dd>
+                    <dd> <a href="#">联系客服 </a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>购物指南</dt>
+                    <dd> <a href="#">购物流程 </a></dd>
+                    <dd> <a href="#">会员介绍 </a></dd>
+                    <dd> <a href="#">生活旅行/团购 </a></dd>
+                    <dd> <a href="#">常见问题 </a></dd>
+                    <dd> <a href="#">大家电 </a></dd>
+                    <dd> <a href="#">联系客服 </a></dd>
+                </dl>
+                <dl class="mod_help_item">
+                    <dt>购物指南</dt>
+                    <dd> <a href="#">购物流程 </a></dd>
+                    <dd> <a href="#">会员介绍 </a></dd>
+                    <dd> <a href="#">生活旅行/团购 </a></dd>
+                    <dd> <a href="#">常见问题 </a></dd>
+                    <dd> <a href="#">大家电 </a></dd>
+                    <dd> <a href="#">联系客服 </a></dd>
+                </dl>
+            </div>
+
+            <!-- mod_copyright  -->
+            <div class="mod_copyright">
+                <p class="mod_copyright_links">
+                    关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 友情链接 | 销售联盟 | 品优购公益 | English Site
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //导航栏线上登录用户的姓名
+        const ykname = document.querySelector('.shortcut .wrapper li:first-child')
+        const ykyuname = localStorage.getItem('ykyname');
+        ykname.innerHTML = `<a href="javascript:;"><i class="iconfont icon-user">${ykyuname}</a>`
+
+        //退出登录删除本地用户名
+        const removeName = document.querySelector('.shortcut .wrapper li:last-child')
+        removeName.addEventListener('click', function () {
+            localStorage.removeItem('xtx-uname')
+        })
+    </script>
+    <script type="text/javascript" src="../../js/Common.js"></script>
+    <script src="../../js/goods/jquery.min.js"></script>
+    <!-- 在引入我们自己的js文件 -->
+    <script src="../../js/goods/car.js"></script>
+    <script src="../../js/goods/goodscar.js"></script>
+</body>
+
+
+</html>

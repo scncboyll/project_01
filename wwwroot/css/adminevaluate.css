@@ -1,0 +1,105 @@
+/* 公共头部 */
+.nav {
+    width: 100%;
+    background-color: gainsboro;
+    margin-bottom: 15px;
+}
+
+.nav ul li {
+    justify-self: center;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.nav ul {
+    display: flex;
+    margin: 5px 30px;
+
+}
+
+.nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    color: white;
+}
+
+.right {
+    display: block;
+}
+
+/* 更改信息 */
+.wapper {
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    width: 560px;
+    text-align: center;
+    display: none;
+}
+
+.top {
+    margin-top: 30px;
+}
+
+.top input {
+    display: inline-block;
+    border: 1px solid black;
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.top li {
+    margin-top: 10px;
+
+}
+
+.top li i {
+    display: inline-block;
+    width: 100px;
+    /* border: 1px solid black; */
+    height: 30px;
+    line-height: 30px;
+
+}
+
+.button {
+    width: 400px;
+}
+
+/*改变placeholder字体颜色*/
+::-webkit-input-placeholder {
+    color: gray;
+}
+
+.submit-w3l {
+    position: relative;
+    left: 30px;
+}
+
+.submit-w3l button {
+    background: gray;
+    color: #000;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    padding: 13px 0;
+    font-size: 14px;
+    width: 80%;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    /* left: 30px; */
+}
+
+.submit-w3l button:hover {
+    background: #df5799;
+    color: #ffffff;
+    transition: 0.3s all;
+}

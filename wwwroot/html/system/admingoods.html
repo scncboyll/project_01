@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品管理</title>
+    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/admingoods.css">
+</head>
+
+<body>
+    <div class="left">
+        <!-- 公用头部 -->
+        <div class="nav">
+            <ul>
+                <li><a href="Home?DashboardID=4">会员信息</a></li>
+                <li><a href="Home?DashboardID=8">会员管理</a></li>
+                <li><a href="Home?DashboardID=11">商品管理</a></li>
+                <li><a href="Home?DashboardID=10">留言管理</a></li>
+                <li><a href="Home?DashboardID=12">评价管理</a></li>
+                <li><a href="Home?DashboardID=13">库存管理</a></li>
+                <li><a href="Home?DashboardID=14">物流管理</a></li>
+                <li><a href="Home?DashboardID=5">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 商品信息展示 -->
+    <div class="right">
+        <h1 style="text-align: center; margin-bottom: 20px;">商品信息</h1>
+        <button onclick="updatainfo()">添加商品</button>
+        <!-- 数据类容部分 -->
+        <table class="table table-hover">
+            <thead>
+                <tr class="font_c">
+                    <td>商品编号</td>
+                    <td>商品名称</td>
+                    <td>商品价格</td>
+                    <td>商品描述</td>
+                    <td>是否推荐</td>
+                    <td>销售状态</td>
+                    <td>评价信息</td>
+                    <td>修改</td>
+                    <td>删除</td>
+                </tr>
+            </thead>
+            <tbody id="userList" class="font_t">
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <!-- 用户修改信息，并上传数据库 -->
+    <div class="wapper" id="wapper">
+        <!-- <h1>修改用户信息</h1>
+            <div class="top">
+                <ul>
+                    <li><i>用户名：</i> <input type="text" placeholder="请输入用户名"></li>
+                    <li><i>密码：</i> <input type="text" placeholder="请输入密码"></li>
+                    <li><i>电子邮箱：</i> <input type="text" placeholder="请输入电子邮箱"></li>
+                    <li><i>真实姓名：</i> <input type="text" placeholder="请输入真实姓名"></li>
+                    <li><i>性别：</i> <input type="text" placeholder="请输入性别"></li>
+                    <li><i>地址：</i> <input type="text" placeholder="请输入居住地址"></li>
+                    <li><i>联系电话：</i> <input type="text" placeholder="请输入联系电话"></li>
+                </ul>
+            </div>
+            <div class="submit-w3l">
+                <button id="loginBut" class="button">提交修改信息</button>
+            </div> -->
+    </div>
+
+
+
+    <!-- 用户评价，并上传数据库 -->
+    <div class="message">
+        <h1 style="text-align: center; margin-bottom: 20px;">商品评价信息</h1>
+        <!-- 数据类容部分 -->
+        <tbody class="font_t">
+            <!-- 数据类容部分 -->
+            <table class="table table-hover">
+                <thead>
+                    <tr class="font_c">
+                        <td>商品编号</td>
+                        <td>评价分数</td>
+                        <td>评价内容</td>
+                        <td>回复内容</td>
+                        <td>评价人</td>
+                        <td>评价时间</td>
+                    </tr>
+                </thead>
+        </tbody>
+        <tbody id="message" class="font_t">
+
+        </tbody>
+        </table>
+    </div>
+
+
+    <!-- 添加商品 -->
+
+    <div class="updata wapper">
+        <h1>添加商品</h1>
+        <div class="top">
+            <ul>
+                <li><i>商品名称：</i> <input type="text" placeholder="请输入商品名称" id="upgoodname"></li>
+                <li><i>商品价格：</i> <input type="text" placeholder="请输入商品价格" id="upprice"></li>
+                <li><i>商品描述：</i> <input type="text" placeholder="请输入商品描述" id="upnote"></li>
+                <li><i>是否推荐</i> <input type="text" placeholder="是否推荐" id="upistj"></li>
+                <li><i>销售状态：</i> <input type="text" placeholder="请输入销售状态" id="upsalestatus"></li>
+                <li><i>商品库存：</i> <input type="text" placeholder="请输入商品库存" id="uptprice"></li>
+                <li><i>商品类型：</i> <input type="text" placeholder="请输入商品类型" id="uptype"></li>
+                <p>注：1：小吃零食 2：生活用品 3：文具用品 4：新鲜水果 5：电子产品</p> 
+                <li><i>上传图片：</i> <input type="file" placeholder="请输入商品类型" id="upimage" style="border: none;"></li>
+            </ul>
+        </div>
+        <div class="submit-w3l">
+            <button id="loginBut" onclick="updata()">提交商品信息</button>
+        </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="../../js/Common.js"></script>
+<script src="../../js/system/admingoods.js"></script>
+
+</html>

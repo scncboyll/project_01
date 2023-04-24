@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>物流管理</title>
+    <link rel="stylesheet" href="../../bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/adminlogistics.css">
+</head>
+
+<body>
+    <div class="left">
+        <!-- 公用头部 -->
+        <div class="nav">
+            <ul>
+                <li><a href="Home?DashboardID=4">会员信息</a></li>
+                <li><a href="Home?DashboardID=8">会员管理</a></li>
+                <li><a href="Home?DashboardID=11">商品管理</a></li>
+                <li><a href="Home?DashboardID=10">留言管理</a></li>
+                <li><a href="Home?DashboardID=12">评价管理</a></li>
+                <li><a href="Home?DashboardID=13">库存管理</a></li>
+                <li><a href="Home?DashboardID=14">物流管理</a></li>
+                <li><a href="Home?DashboardID=5">退出登录</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 style="text-align: center; margin-bottom: 20px;">物流信息</h1>
+
+    <!-- 物流信息 -->
+    <div class="right">
+        <!-- 数据类容部分 -->
+        <table class="table table-hover">
+            <thead>
+                <tr class="font_c">
+                    <td>物流ID</td>
+                    <td>出货时间</td>
+                    <td>收货时间</td>
+                    <td>收货人地址</td>
+                    <td>收货人电话</td>
+                    <td>收货人</td>
+                    <td>物流电话</td>
+                    <td>物流信息</td>
+                    <td>邮箱</td>
+                    <td>删除</td>
+                </tr>
+            </thead>
+            <tbody id="userList" class="font_t">
+
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+
+<script type="text/javascript" src="../../js/Common.js"></script>
+<script src="../../js/jquery-1.12.4.js"></script>
+<script src="../../js/system/adminlogistics.js"></script>
+
+</html>

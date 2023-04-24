@@ -1,0 +1,450 @@
+/* 放index页面的样式表 */
+/* banner */
+.banner {
+    height: 500px;
+    background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+    position: relative;
+    height: 500px;
+    background-color: pink;
+}
+
+/* 侧导航 */
+.banner .aside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.banner .aside li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.banner .aside a {
+    position: relative;
+    /* 宽度和父级一样 */
+    padding-left: 36px;
+    padding-right: 19px;
+    display: block;
+    height: 50px;
+
+    color: #fff;
+}
+
+.banner .aside a span {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.banner .aside a:hover {
+    background-color: #27ba9b;
+}
+
+/* a的里面最后的位置添加箭头 */
+.banner .aside a::after {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    content: '';
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -110px;
+}
+
+/* 箭头 */
+.next,
+.prev {
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, .2);
+    background-image: url(../images/sprites.png);
+    border-radius: 50%;
+}
+
+/* 背景图位置负责2件事: 改变箭头在盒子里面的位置; 改变精灵图的位置 */
+/* 导致在精灵图中测量的尺寸不准确 */
+/* 解决方案有2种: 
+    1. 书写背景图位置属性, 借助谷歌的调试工具调试具体的位置数值
+    2. 书写标签的时候, a负责盒子,里面再添加一个span负责箭头
+*/
+.prev {
+    left: 260px;
+    background-position: 14px -60px;
+}
+
+.next {
+    right: 10px;
+    background-position: -23px -60px;
+}
+
+/* 搜索框 */
+.search_nav .result-list {
+    display: none;
+    position: absolute;
+    width: 15vw;
+    right: 17vw;
+    top: 140px;
+    z-index: 999;
+    text-align: left;
+    /* border: 1px solid #666; */
+    background: #fff;
+
+}
+
+.search_nav .result-list a {
+    display: block;
+    padding: 6px 15px;
+    font-size: 12px;
+    color: #424242;
+    text-decoration: none;
+}
+
+.search_nav .result-list a:hover {
+    background-color: #999;
+}
+
+/* 圆点 */
+.banner ol {
+    position: absolute;
+    left: 680px;
+    bottom: 30px;
+
+    height: 10px;
+}
+
+.banner ol li {
+    float: left;
+    margin-right: 24px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.banner ol .current {
+    background-color: #fff;
+}
+
+/* 新鲜好物 */
+
+.goods .hd {
+    height: 114px;
+    line-height: 114px;
+}
+
+.goods .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+
+    height: 114px;
+}
+
+.goods .hd h2 span {
+    margin-left: 34px;
+    font-size: 16px;
+    color: #999;
+}
+
+.goods .hd a,
+.shengxian .hd .more {
+    float: right;
+    color: #999;
+}
+
+.goods .hd a::after,
+.shengxian .hd .more::after {
+    content: '';
+    display: inline-block;
+    margin-left: 13px;
+    width: 7px;
+    height: 13px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+
+.goods .bd li {
+    position: relative;
+    float: left;
+    margin-right: 8px;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    text-align: center;
+}
+
+.goods .bd li:last-child {
+    margin-right: 0;
+}
+
+.goods .bd li img {
+    width: 304px;
+}
+
+.goods .bd li h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.goods .bd li div {
+    color: #9a2e1f;
+    font-size: 17px;
+}
+
+.goods .bd li div span {
+    font-size: 23px;
+}
+
+.goods .bd li b {
+    position: absolute;
+    left: 17px;
+    top: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #27ba9b;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #27ba9b;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* 生鲜 */
+.shengxian .hd {
+    height: 96px;
+    line-height: 96px;
+}
+
+.shengxian .hd h2 {
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.shengxian .hd .more {
+    float: right;
+}
+
+.shengxian .hd ul {
+    float: right;
+    margin-right: 65px;
+}
+
+.shengxian .hd ul li {
+    float: left;
+}
+
+.shengxian .hd li a {
+    padding: 2px 7px;
+    margin-left: 6px;
+}
+
+.shengxian .hd li a:hover {
+    background-color: #27ba9b;
+    color: #fff;
+}
+
+.shengxian .bd .left {
+    float: left;
+    width: 240px;
+    height: 610px;
+    background-color: pink;
+}
+
+.shengxian .bd .right {
+    float: left;
+    width: 1000px;
+    height: 610px;
+    background-color: skyblue;
+}
+
+.goodslist {
+    display: flex;
+}
+
+.goodslist ul {
+    margin-top: 30px;
+
+    /* border: 1px solid #000; */
+}
+
+.goodslist ul li {
+    display: flex;
+    width: 1240px;
+    justify-content: space-between;
+}
+
+.goodslist .goodsimg img {
+    width: 200px;
+    height: 190px;
+
+    /* border: 1px solid #000; */
+}
+
+.goodslist ul li .goodsinfo {
+    width: 200px;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 10px;
+    /* border: 1px solid #000; */
+    flex: 1;
+}
+
+.goodslist ul li .goodsinfo h3 {
+    color: #666;
+    padding-top: 10px;
+}
+
+.goodslist ul li .goodsinfo p {
+    margin-top: 20px;
+}
+
+
+.goodslist ul li .goodsstate {
+    width: 200px;
+    padding-top: 100px;
+    font-size: 16px;
+}
+
+.goodslist ul li .joincar button {
+    margin-top: 90px;
+    width: 100px;
+    height: 45px;
+}
+
+.goodslist ul li .joincar button:hover {
+    color: #27ba9b;
+}
+
+.goodslist ul li .goodsnum {
+    width: 200px;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 30px;
+    /* border: 1px solid #000; */
+}
+
+.goodslist ul li .goodsnum p {
+    padding-top: 30px;
+}
+
+.bd li:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    top: -3px;
+}
+
+.bd li {
+    background-color: #f0f9f4;
+    position: relative;
+    transition: all 0.3s;
+    top: 0;
+}
+
+
+.xtx-elevator {
+    position: fixed;
+    width: 50px;
+    right: 30px;
+    top: 600px;
+    z-index: 999;
+    /* border: 1px solid #000; */
+}
+
+.xtx-elevator .xtx-elevator-list li {
+    height: 50px;
+    /* border: 1px solid #000; */
+}
+
+.xtx-elevator .xtx-elevator-list li a i {
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: 13px;
+    background-position: 8px -106px;
+    font-size: 20px;
+    transform: rotate(-90deg);
+
+}
+
+.sprites {
+    background-image: url(../images/sprites.png);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+}
+
+.xtx-elevator .xtx-elevator-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.xtx-elevator .xtx-elevator-list li a:hover {
+    color: aqua;
+}
+
+.shortcut .wrapper a:hover {
+    color: aqua;
+}
+
+.goodslist ul{
+    display: none;
+}
+.btn{
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+    touch-action: manipulation;
+    }
+
+    /* 轮播图 */
+.article{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 990px;
+    height: 500px;
+    overflow: hidden;
+}
+.article .swiper {
+    width: 100%;
+    height: 100%;
+}
+.article .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.article .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

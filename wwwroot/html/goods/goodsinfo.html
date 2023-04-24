@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>商品详情</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <!-- <link rel="stylesheet" href="//at.alicdn.com/t/font_1939705_bgtmkonu28.css"> -->
+  <link rel="stylesheet" href="../../fonts/iconfont.css">
+
+  <link rel="stylesheet" href="../../css/indexinfo.css">
+  <link rel="stylesheet" href="../../css/commoninfo.css">
+  <link rel="stylesheet" href="../../css/productinfo.css">
+
+  <link rel="stylesheet" href="../../css/common.css">
+
+  <script src="../../js/Common.js"></script>
+  <script src="../../js/jquery-1.12.4.js"></script>
+</head>
+
+<body>
+
+  <!-- 快捷导航 -->
+  <div class="shortcut">
+    <div class="wrapper">
+      <ul>
+        <li ></li>
+        <li><a href="Home?DashboardID=7">首页</a></li>
+        <li><a href="Home?DashboardID=15">购物车</a></li>
+        <li><a href="Home?DashboardID=16">留言板</a></li>
+        <li><a href="Home?DashboardID=19">个人中心</a></li>
+        <li><a href="Home?DashboardID=0">退出登录</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- 头部 -->
+  <div class="xtx_header">
+    <div class="wrapper">
+      <!-- 网站Logo -->
+      <h1 class="xtx_logo"><a href="/"></a></h1>
+      <!-- 主导航 -->
+      <div class="xtx_navs">
+        <ul class="clearfix">
+          <li><a href="Home?DashboardID=7">首页</a></li>
+          <li><a href="#">小吃零食</a></li>
+          <li><a href="#">生活用品</a></li>
+          <li><a href="#">文具用品</a></li>
+          <li><a href="#">新鲜水果</a></li>
+          <li><a href="#">电子产品</a></li>
+        </ul>
+      </div>
+      <!-- 站内搜索 -->
+      <div class="xtx_search clearfix">
+        <!-- 购物车 -->
+        <a href="javascript:;" class="xtx_search_cart sprites">
+          <i>2</i>
+        </a>
+        <!-- 搜索框 -->
+        <div class="xtx_search_wrapper">
+          <input type="text" placeholder="搜一搜">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 头部sticky定位 添加show类名可以显示 -->
+  <div class="sticky">
+    <div class="header-sticky container">
+      <div class="sticky-logo">
+        <h1>
+          <a href="#"></a>
+        </h1>
+      </div>
+      <ul class="sticky-nav">
+        <li><a href="Home?DashboardID=7">首页</a></li>
+        <li><a href="#">小吃零食</a></li>
+        <li><a href="#">生活用品</a></li>
+        <li><a href="#">文具用品</a></li>
+        <li><a href="#">新鲜水果</a></li>
+        <li><a href="#">电子产品</a></li>
+        <li><a href="#">严选</a></li>
+        <li><a href="#">数码</a></li>
+        <li><a href="#">运动</a></li>
+        <li><a href="#">杂项</a></li>
+      </ul>
+      <!-- <div class="sticky-right">
+        <a href="#">品牌</a>
+        <a href="#">专题</a>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- 返回顶部 -->
+  <!-- <div class="backTop">
+    <i class="backIcon"></i>
+    <p>顶部</p>
+  </div> -->
+
+  <!-- 商品详情 -->
+  <div class="xtx-wrapper">
+    <div class="container">
+      <!-- 面包屑 -->
+      <div class="xtx-bread">
+        <a href="javascript:;"> 首页 > </a>
+        <a href="javascript:;"> 商品 > </a>
+        <a href="javascript:;"> 商品详情 > </a>
+        <span>小米电视4A 32英寸</span>
+      </div>
+      <!-- 商品信息 -->
+      <div class="xtx-product-info">
+        <div class="left">
+          <div class="pictrue">
+            <div class="middle">
+              <img src="" alt="">
+              <div class="layer"></div>
+            </div>
+            <div class="small">
+              <ul>
+                <li class="active"><img src="" alt=""></li>
+                <li><img src="" alt="" class="img1"></li>
+              <!--<li><img src="./images/3.jpg" alt=""></li>
+                <li><img src="./images/4.jpg" alt=""></li>
+                <li><img src="./images/5.jpg" alt=""></li> -->
+              </ul>
+            </div>
+            <div class="large" style="background-image: url();"></div>
+          </div>
+          <div class="other">
+            <ul>
+              <li>
+                <p>销量人气</p>
+                <p>1999+</p>
+                <p>销量人气</p>
+              </li>
+              <li>
+                <p>商品评价</p>
+                <p>999+</p>
+                <p>查看评价</p>
+              </li>
+              <li>
+                <p>收藏人气</p>
+                <p>299+</p>
+                <p><a href="javascript:;">收藏商品</a></p>
+              </li>
+              <li>
+                <p>品牌信息</p>
+                <p class="brandinfo"></p>
+                <p><a href="javascript:;">品牌主页</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <h3 class="name"></h3>
+          <p class="desc"></p>
+          <p class="price"><span class="now"></span><span class="old">¥2999</span></p>
+          <div class="address">
+            <div class="item">
+              <div class="dt">促销</div>
+              <div class="dd">12月好物放送，App领券购买直降120元</div>
+            </div>
+            <div class="item">
+              <div class="dt">配送</div>
+              <div class="dd">至
+                <div class="box">
+                  <span>陕西 西安 <i></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="dt">服务</div>
+              <div class="dd">
+                <span class="fw">无忧退货</span>
+                <span class="fw">快速退款</span>
+                <span class="fw">免费包邮</span>
+                <a href="#" class="lj">了解详情</a>
+              </div>
+            </div>
+          </div>
+          <div class="attrs">
+            <div class="item">
+              <div class="dt">类别</div>
+              <div class="dd" id="color">
+                <img src="" alt="" class="img1">
+                <img src="" alt="" class="img2">
+              </div>
+            </div>
+            <!-- <div class="item">
+              <div class="dt">颜色</div>
+              <div class="dd" id="size">
+                <span class="size">22英寸</span>
+                <span class="size">42英寸</span>
+                <span class="size">52英寸</span>
+                <span class="size">62英寸</span>
+              </div>
+            </div> -->
+            <div class="item">
+              <div class="dt">数量</div>
+              <div class="dd">
+                <div class="num">
+                  <a href="javascript:;">-</a>
+                  <input type="text" value="1" class="goodsnum">
+                  <a href="javascript:;">+</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <a class="buy" href="javascript:;">加入购物车</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 同类产品推荐 -->
+      <div class="xtx-relevant-product">
+        <h3>同类产品推荐</h3>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="../../uploads/history_goods1.jpg" alt="">
+              <p class="name">USB Type C数据线</p>
+              <p class="desc">快速充电，稳定传输</p>
+              <p class="price">¥39</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../../uploads/history_goods2.jpg" alt="">
+              <p class="name">红米Note 5A 高配版</p>
+              <p class="desc">1600万像素柔光自拍</p>
+              <p class="price">¥1899</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../../uploads/history_goods3.jpg" alt="">
+              <p class="name">VGA网口多功能转接器</p>
+              <p class="desc">小巧便携，节省桌面空间</p>
+              <p class="price">¥19</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="../../uploads/history_goods4.jpg" alt="">
+              <p class="name">笔记本Pro 15.6"</p>
+              <p class="desc">全金属强化机身搭配独显</p>
+              <p class="price">¥4899</p>
+            </a>
+          </li>
+        </ul>
+        <a href="javascript:;" class="prev"><span class="iconfont icon-angle-left"></span></a>
+        <a href="javascript:;" class="next"><span class="iconfont icon-angle-right"></span></a>
+      </div>
+
+      <!-- 商品详情 -->
+      <div class="xtx-product-detail">
+        <div class="main">
+          <div class="cont">
+            <div class="tab-head">
+              <a href="javascript:;" class="active" data-id="2">商品详情</a>
+              <a href="javascript:;" data-id="3">商品评价<span>（998+）</span></a>
+            </div>
+            <div class="tab-pane" style="display: block;">
+              <!-- 静态属性 -->
+              <div class="attrs">
+                <div style="width: 100%; font-size: 20px; margin-bottom: 10px; text-align: center;"><h4 class="itemnote"></h4></div>
+                <div class="item"><span>商品名称：</span><span class="itemgoodname">小米L32M5-AZ </span></div>
+                <div class="item"><span>商品编号：</span><span>4620979 </span></div>
+                <div class="item"><span>商品毛重：</span><span>1.0kg </span></div>
+                <div class="item"><span>商品产地：</span><span>中国大陆 </span></div>
+                <div class="item"><span>销售数量：</span><span class="itemfilename">32英寸及以下 </span></div>
+                <div class="item"><span>库存数量：</span><span class="itemtprice">三级能效 </span></div>
+                <div class="item"><span>销售状态：</span><span class="itemsalestatus">人工智能 </span></div>
+                <div class="item"><span>选购指数：</span><span>6.9-6.0 </span></div>
+                
+              </div>
+              <!-- 详情内容 -->
+              <div class="detail">
+                <img src="../../uploads/goods_item.jpg">
+                <img src="" style="width: 45%; margin-right: 10px;" class="detailtiem1">
+                <img src="" style="width: 45%;" class="detailtiem2">
+              </div>
+            </div>
+
+            <!-- 商品评价信息 -->
+            <div class="tab-pane" style="display: none;">
+              <div class="goods-tabs">
+                <div class="tabs-hd">
+                  <span>排序：</span>
+                  <!-- tabs切换按钮 -->
+                  <ul>
+                    <li class="active"><a href="#">默认</a></li>
+                    <li><a href="#">最新</a></li>
+                    <li><a href="#">最热</a></li>
+                  </ul>
+                </div>
+                <div class="tabs-bd">
+                  <!-- 默认tabs隐藏   切换show类名显示 -->
+                  <!-- 默认评论模块 -->
+                  <div class="tabs tabs-default show">
+                    <!-- tabs-item 每一个评论列表 -->
+                    <div class="tabs-item">
+                      <div class="userInfo">
+                        <span class="userpic"><img src="./uploads/avatar_1.png" alt=""></span>
+                        <span class="username">游****y</span>
+                      </div>
+                      <div class="tbs-body">
+                        <div class="score">
+                          <!-- 切换xingxing 和 xingxing1 可以改变星星样式 -->
+                          <i class="iconfont icon-xingxing"></i>
+                          <i class="iconfont icon-xingxing"></i>
+                          <i class="iconfont icon-xingxing"></i>
+                          <i class="iconfont icon-xingxing"></i>
+                          <i class="iconfont icon-xingxing"></i>
+                          <span class="attr">商品名称：<i></i></span>
+                          <span class="attr">产地：中国大陆</span>
+                          
+                        </div>
+                        <div class="text">商品非常的好，且价格实惠！建议购买！</div>
+                        <div class="comment-image">
+                          <div class="list">
+                            <a class="" href="javascript:;">
+                              <img src="" alt="" class="listitem1">
+                            </a>
+                            <a class="" href="javascript:;">
+                              <img src="" alt="" class="listitem2">
+                            </a>
+
+                          </div>
+                          <!---->
+                        </div>
+                        <div class="time">
+                          <span>2023-04-03 13:20:32</span>
+                          <span class="zan"><i class="iconfont icon-dianzan"></i>174</span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- tabs-item 每一个评论列表 -->
+                    <div class="tabs-item">
+                      <div class="userInfo">
+                        <span class="userpic"><img src="./uploads/avatar_1.png" alt=""></span>
+                        <span class="username">张****y</span>
+                      </div>
+                      <div class="tbs-body">
+                        <div class="score">
+                          <!-- 切换xingxing 和 xingxing1 可以改变星星样式 -->
+                          <i class="iconfont icon-xingxing"></i>
+                          <i class="iconfont icon-xingxing"></i>
+                          <i class="iconfont icon-xingxing"></i>
+                          <i class="iconfont icon-xingxing1"></i>
+                          <i class="iconfont icon-xingxing1"></i>
+                          <span class="attr">商品名称：<i></i></span>
+                          <span class="attr">产地：中国大陆</span>
+                        </div>
+                        <div class="text">款式非常的多，且价格实惠！建议购买！</div>
+                        <div class="comment-image">
+                          <div class="list">
+                            <a href="javascript:;">
+                              <img src="" alt="" class="listitem1">
+                            </a>
+                            <a href="javascript:;">
+                              <img src="" alt="" class="listitem2">
+                            </a>
+                          </div>
+                          <!---->
+                        </div>
+                        <div class="time">
+                          <span>2023-03-03 15:40:39</span>
+                          <span class="zan"><i class="iconfont icon-dianzan"></i>43</span>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- 最新评论模块 -->
+                  <div class="tabs tabs-new"></div>
+                  <!-- 最热评论模块 -->
+                  <div class="tabs tabs-hot"></div>
+                </div>
+
+                <!-- 翻页在这里 -->
+                <div class="xtx-pagination">
+                  <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 注意事项 -->
+          <div class="warn">
+            <h3>注意事项</h3>
+            <p class="tit">• 购买运费如何收取？ </p>
+            <p>单笔订单金额(不含运费)满88元免邮费；不满88元，每单收取10元运费。（港澳台地区需满500元免邮费；不满500元，每单收取30元运费) </p>
+            <br>
+            <br>
+            <p class="tit">• 使用什么快递发货? </p>
+            <p>默认使用顺丰快递发货(个别商品使用其他快递） </p>
+            <p>配送范围覆盖全国大部分地区(港澳台地区除外）。 </p>
+            <br>
+            <br>
+            <p class="tit">• 如何申请退货? </p>
+            <p>1.自收到商品之日起30日内，顾客可申请无忧退货，退款将原路返还，不同的银行处理时间不同，预计1-5个工作日到账； </p>
+            <p>2.内裤和食品等特殊商品无质量问题不支持退货； </p>
+            <p>3.退货流程： 确认收货-申请退货-客服审核通过-用户寄回商品-仓库签收验货-退款审核-退款完成； </p>
+            <p>4.因商品问题产生的退货，如质量问题，退货邮费由商家承担，退款完成后会以现金券的形式报销。因客户个人原因产生的退货，购买和寄回运费由客户个人承担。</p>
+          </div>
+        </div>
+        <div class="aside">
+          <div class="tit">24小时热销榜</div>
+          <div class="product">
+            <img src="../../uploads/seckill_goods_1.jpg" alt="">
+            <p class="name">华为freelace活力版无线蓝牙耳机</p>
+            <p class="desc">快速充电,稳定传输</p>
+            <p class="price">¥129</p>
+          </div>
+          <div class="product">
+            <img src="../../uploads/new_goods_2.jpg" alt="">
+            <p class="name">京东小家家用电冰箱</p>
+            <p class="desc">智能一级能效, 风冷无霜</p>
+            <p class="price">¥3399</p>
+          </div>
+          <div class="product">
+            <img src="../../uploads/new_goods_4.jpg" alt="">
+            <p class="name">华为 运动智能手表</p>
+            <p class="desc">无线充电,支持AI语音功能</p>
+            <p class="price">¥329</p>
+          </div>
+          <div class="tit">专题推荐</div>
+          <div class="special">
+            <img src="./uploads/discuss_goods_1.jpg" alt="">
+            <p class="name">一往无前，诞生于崛起</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 公共底部 -->
+  <div class="xtx_footer clearfix">
+    <div class="wrapper">
+      <!-- 联系我们 -->
+      <div class="contact clearfix">
+        <dl>
+          <dt>客户服务</dt>
+          <dd class="chat">在线客服</dd>
+          <dd class="feedback">问题反馈</dd>
+        </dl>
+        <dl>
+          <dt>关注我们</dt>
+          <dd class="weixin">公众号</dd>
+          <dd class="weibo">微博</dd>
+        </dl>
+        <dl>
+          <dt>下载APP</dt>
+          <dd class="qrcode">
+            <img src="../../uploads/qrcode.png">
+          </dd>
+          <dd class="download">
+            <span>扫描二维码</span>
+            <span>立马下载APP</span>
+            <a href="javascript:;">下载页面</a>
+          </dd>
+        </dl>
+        <dl>
+          <dt>服务热线</dt>
+          <dd class="hotline">
+            400-0000-000
+            <small>周一至周日 8:00-18:00</small>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <!-- 其它 -->
+    <div class="extra">
+      <div class="wrapper">
+        <!-- 口号 -->
+        <div class="slogan">
+          <a href="javascript:;" class="price">价格亲民</a>
+          <a href="javascript:;" class="express">物流快捷</a>
+          <a href="javascript:;" class="quality">品质新鲜</a>
+        </div>
+        <!-- 版权信息 -->
+        <div class="copyright">
+          <p>
+            <a href="javascript:;">关于我们</a>
+            <a href="javascript:;">帮助中心</a>
+            <a href="javascript:;">售后服务</a>
+            <a href="javascript:;">配送与验收</a>
+            <a href="javascript:;">商务合作</a>
+            <a href="javascript:;">搜索推荐</a>
+            <a href="javascript:;">友情链接</a>
+          </p>
+          <p>CopyRight &copy; 校园购物平台</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      //导航栏线上登录用户的姓名
+      const ykname = document.querySelector('.shortcut .wrapper li:first-child')
+      const ykyuname = localStorage.getItem('ykyname');
+      ykname.innerHTML = `<a href="javascript:;"><i class="iconfont icon-user">${ykyuname}</a>`
+
+      //退出登录删除本地用户名
+      const removeName = document.querySelector('.shortcut .wrapper li:last-child')
+      removeName.addEventListener('click', function () {
+        localStorage.removeItem('xtx-uname')
+      })
+
+
+    //获取url地址中后面的参数
+    const url_string =  location.href;
+    const url = new URL(url_string);
+    const id =  url.searchParams.get('id');
+    console.log(id);
+
+    //获取所有商品列表
+    $(function(){
+      let url = "/API";
+
+      //向APICommand传递一个AdminIndex参数
+      let parameter = {
+        APICommand: "Admingoods",
+      }
+      getAPICommandData(url, parameter).then(data => {
+        let userList = data.Data;
+        //获取当前页面的商品信息
+        let newlist = []
+        for (let k in userList) {
+          if (userList[k].goodid === id) {
+            newlist.push(userList[k])
+          }
+        }
+        console.log(newlist);
+        //对跳转页面进行渲染
+        $('.xtx-bread span,.score .attr i,.other .brandinfo,.right .name').html(newlist[0].goodname);
+        // $('.other .brandinfo').html(newlist[0].goodname);
+        // $('.right .name').html(newlist[0].goodname);
+        $('.right .desc').html(newlist[0].note);
+        $('.right .price .now').html('¥' + (+newlist[0].price).toFixed(2));
+        $('.right .price .old').html('¥' + Math.ceil((+newlist[0].price) * 0.3 + +newlist[0].price).toFixed(2));
+        $('.small img').attr('src', `../../uploads/${newlist[0].goodid}.jpg`);
+        $('.small .img1').attr('src', `../../uploads/${newlist[0].goodid}.1.jpg`);
+        $('.pictrue .middle img').attr('src', `../../uploads/${newlist[0].goodid}.jpg`);
+        $('.large').attr('style', `background-image: url(../../uploads/${newlist[0].goodid}.jpg)`);
+        $('#color .img1, .detail .detailtiem1, .list .listitem1').attr('src', `../../uploads/${newlist[0].goodid}.jpg`);
+        $('#color .img2, .detail .detailtiem2, .list .listitem2').attr('src', `../../uploads/${newlist[0].goodid}.1.jpg`);
+        $('.attrs .itemgoodname').html(newlist[0].goodname);
+        $('.attrs .itemfilename').html(newlist[0].filename);
+        $('.attrs .itemtprice').html(newlist[0].tprice);
+        $('.attrs .itemsalestatus').html(newlist[0].salestatus);
+        $('.attrs .itemnote').html(newlist[0].note);
+        $('.goodsnum').attr('value', newlist[0].num)
+
+          // 点击添加购物车
+          ; (function () {
+            const carid = newlist[0].goodid;
+            $('.item .buy').on('click', function () {
+              joincar(carid)
+            })
+            function joincar(id) {
+
+              let url = "/API";
+
+              let param = {
+                APICommand: "joincar",
+                ID: id
+              }
+              getAPICommandData(url, param).then(data => {
+                //window.location.reload();
+                if (data.Data > 0) {
+                  alert("加入成功");
+                } else {
+                  alert(data);
+                }
+              })
+
+            }
+
+          })();
+
+
+
+
+        })
+    })
+
+    //顶部导航栏自动滑出
+   ; (function () {
+      const sticky = document.querySelector('.sticky');
+      const header = document.querySelector('.xtx_header .wrapper');
+      const headerTop = header.offsetTop;
+      // console.log(headerTop);
+      const heaerHeight = header.clientHeight;
+      const top = headerTop + heaerHeight;
+      window.addEventListener('scroll', function () {
+        const n = document.documentElement.scrollTop;
+        if (n >= top) {
+          sticky.style.top = '0px';
+        } else {
+          sticky.style.top = '-80px';
+        }
+      })
+    })();
+
+
+    //三个图的故事
+    (function () {
+      // 1. 获取三个盒子
+      // 2. 小盒子 图片切换效果
+      const small = document.querySelector('.small')
+      //  中盒子
+      const middle = document.querySelector('.middle')
+      //  大盒子
+      const large = document.querySelector('.large')
+      // 2. 事件委托
+      small.addEventListener('mouseover', function (e) {
+        if (e.target.tagName === 'IMG') {
+          // console.log(111)
+          // 排他 干掉以前的 active  li 上面
+          this.querySelector('.active').classList.remove('active')
+          // 当前元素的爸爸添加 active
+          e.target.parentNode.classList.add('active')
+          // 拿到当前小图片的 src
+          // console.log(e.target.src)
+          // 让中等盒子里面的图片，src 更换为   小图片src
+          middle.querySelector('img').src = e.target.src
+          // 大盒子更换背景图片
+          large.style.backgroundImage = `url(${e.target.src})`
+        }
+      })
+
+
+      // 3. 鼠标经过中等盒子， 显示隐藏 大盒子
+      middle.addEventListener('mouseenter', show)
+      middle.addEventListener('mouseleave', hide)
+      let timeId = null
+      // 显示函数 显示大盒子
+      function show() {
+        // 先清除定时器
+        clearTimeout(timeId)
+        large.style.display = 'block'
+      }
+      // 隐藏函数 隐藏大盒子
+      function hide() {
+        timeId = setTimeout(function () {
+          large.style.display = 'none'
+        }, 200)
+      }
+
+
+      // 4. 鼠标经过大盒子， 显示隐藏 大盒子
+      large.addEventListener('mouseenter', show)
+      large.addEventListener('mouseleave', hide)
+
+
+      // 5. 鼠标经过中等盒子，显示隐藏 黑色遮罩层
+      const layer = document.querySelector('.layer')
+      middle.addEventListener('mouseenter', function () {
+        layer.style.display = 'block'
+      })
+      middle.addEventListener('mouseleave', function () {
+        layer.style.display = 'none'
+      })
+      // 6.移动黑色遮罩盒子
+      middle.addEventListener('mousemove', function (e) {
+        // let x = 10, y = 20
+        // console.log(11)
+        // 鼠标在middle 盒子里面的坐标 = 鼠标在页面中的坐标 - middle 中等盒子的坐标
+        // console.log(e.pageX)鼠标在页面中的坐标
+        // middle 中等盒子的坐标
+        // console.log(middle.getBoundingClientRect().left)
+        let x = e.pageX - middle.getBoundingClientRect().left
+        let y = e.pageY - middle.getBoundingClientRect().top - document.documentElement.scrollTop
+        // console.log(x, y)
+        // 黑色遮罩移动 在 middle 盒子内 限定移动的距离
+        if (x >= 0 && x <= 400 && y >= 0 && y <= 400) {
+          // 黑色盒子不是一直移动的
+          // 声明2个变量 黑色盒子移动的 mx my变量 
+          let mx = 0, my = 0
+          if (x < 100) mx = 0
+          if (x >= 100 && x <= 300) mx = x - 100
+          if (x > 300) mx = 200
+
+          if (y < 100) my = 0
+          if (y >= 100 && y <= 300) my = y - 100
+          if (y > 300) my = 200
+
+          layer.style.left = mx + 'px'
+          layer.style.top = my + 'px'
+          // 大盒子的背景图片要跟随 中等盒子移动  存在的关系是 2倍   
+          large.style.backgroundPositionX = -2 * mx + 'px'
+          large.style.backgroundPositionY = -2 * my + 'px'
+        }
+      })
+    })();
+
+
+    //商品详情和商品评价切换
+    (function () {
+      const tabHead = document.querySelector('.tab-head');
+      tabHead.addEventListener('click', function (e) {
+        if (e.target.tagName == 'A') {
+          const active = document.querySelector('.tab-head .active');
+          if (active) active.classList.remove('active');
+          e.target.classList.add('active');
+
+          const id = e.target.dataset.id;
+          const a = id == 2 ? 3 : 2;
+          document.querySelector('.main .cont>div:nth-child(' + id + ')').style.display = 'block';
+          document.querySelector('.main .cont>div:nth-child(' + a + ')').style.display = 'none';
+        }
+      })
+    })();
+
+
+    //点击尺寸
+    // (function () {
+    //   const dd = document.querySelector('.item #size');
+    //   dd.addEventListener('click', function (e) {
+    //     if (e.target.tagName == 'SPAN') {
+    //       const active = document.querySelector('.item #size .active');
+    //       if (active) active.classList.remove('active');
+    //       e.target.classList.add('active');
+    //     }
+    //   });
+    // })();
+
+
+    //点击颜色
+    (function () {
+      const dd = document.querySelector('.item #color');
+      dd.addEventListener('click', function (e) {
+        if (e.target.tagName == 'IMG') {
+          const active = document.querySelector('.item  #color img.active');
+          if (active) active.classList.remove('active');
+          e.target.classList.add('active');
+        }
+      });
+    })();
+
+  </script>
+</body>
+
+</html>
